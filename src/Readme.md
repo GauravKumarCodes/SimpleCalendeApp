@@ -10,6 +10,7 @@ The application defaults to displaying today's events when launching.
 To delete all items in the calendar, first end the program, delete data.txt, and rerun.
 If you wish to delete only some items, end the program, delete individual lines
 from data.txt, then rerun. 
+
 ###Technical Section
 The project is using MVC:
 * Model is EventHolder.java
