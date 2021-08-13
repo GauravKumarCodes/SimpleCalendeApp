@@ -1,4 +1,5 @@
 ##Simple Calendar App
+
 This calendar application allows users to enter the date, time and description of events,
 and on another side of the screen, a day's events are displayed in order of
 time. Upon launch, the app defaults to displaying today's events. 
