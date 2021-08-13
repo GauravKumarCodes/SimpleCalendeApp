@@ -15,6 +15,7 @@ If you wish to delete only some items, end the program, delete individual lines
 from data.txt, then rerun. 
 
 ###Technical Section
+
 The project is using MVC:
 * Model is EventHolder.java
 * View is UI.java
