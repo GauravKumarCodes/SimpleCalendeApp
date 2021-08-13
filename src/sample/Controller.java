@@ -1,20 +1,14 @@
 package sample;
 
-import javax.swing.text.DateFormatter;
 import java.io.*;
 import java.time.LocalDate;
-import java.util.Date;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.PriorityQueue;
 import java.util.Scanner;
 
-public class Controller {// Accepts input and converts it to commands for the model or view. It glues the Model and the View.
+public class Controller {// Accepts input and converts to commands for the model or view. It glues the Model and the View.
     final private String file_name = "data.txt";
     public void addEvent(String when, String what, EventHolder holder){
-        holder.addEvent(new EventHolder.CalendarEvent(when, what)); //takes UI input and converts to
+        holder.addEvent(new EventHolder.CalendarEvent(when, what));
     }
     public LocalDate updateDate(String date, EventHolder holder) throws Exception{
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy");

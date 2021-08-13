@@ -8,11 +8,8 @@ package sample;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.PriorityQueue;
-import java.util.function.Function;
 
 public class EventHolder {
 
@@ -31,7 +28,7 @@ public class EventHolder {
         }
     }
 
-    private PriorityQueue<CalendarEvent> eventList; // events not stored in any particular order
+    private PriorityQueue<CalendarEvent> eventList;
     private LocalDate selectedDate;
     public EventHolder() {
         this.eventList = new PriorityQueue<>((CalendarEvent e1, CalendarEvent e2) -> e1.dateTime.compareTo(e2.dateTime));
